@@ -1,6 +1,17 @@
+// next.config.mjs
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
+  // --- AÑADE ESTO ---
+  images: {
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'images.unsplash.com',
+      },
+    ],
+  },
+  // --- FIN DE LA MODIFICACIÓN ---
 };
 
 export default nextConfig;
