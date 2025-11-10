@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 
 const PUBLIC_FILE = /\.(.*)$/;
 const availableLanguages = ['en', 'es'];
-const defaultLanguage = 'en'; // Español como predeterminado
+const defaultLanguage = 'es'; // <-- CAMBIADO A ESPAÑOL
 
 export function middleware(request) {
   const { pathname } = request.nextUrl;
@@ -25,7 +25,6 @@ export function middleware(request) {
   if (pathnameHasLocale) return NextResponse.next();
 
   // Redirigir a la URL con el idioma predeterminado
-  // Ejemplo: / -> /es/
   request.nextUrl.pathname = `/${defaultLanguage}${pathname}`;
   return NextResponse.redirect(request.nextUrl);
 }

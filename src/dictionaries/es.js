@@ -2,195 +2,148 @@
 export const dictionary = {
   navbar: {
     home: 'Inicio',
-    about: 'Nosotros',
-    programs: 'Programas',
-    gallery: 'Galería',
-    contact: 'Contacto',
+    menu: 'Menú',
   },
   hero: {
-    title: "Capital City Volleyball",
-    subtitle: "Centro de entrenamiento de voleibol para niños y adultos en Pflugerville, TX. Construyendo confianza y habilidad dentro y fuera de la cancha.",
-    button: "Ver Programas",
-    imageAlt: "Jugadora de Capital City Volleyball sirviendo una pelota",
+    title: "El Sabor Que Te Mereces",
+    subtitle: "Descubre nuestras deliciosas comidas rápidas y snacks hechos al momento. ¡Perfecto para cualquier antojo!",
+    button: "Ver Menú",
+    imageAlt: "Deliciosa hamburguesa y papas fritas",
   },
-  socialProof: {
-    title: "Con la confianza de atletas y padres en todo el centro de Texas",
-    // --- CAMBIO: Eliminado 'Pflugerville ISD' ---
-    partners: [
-      { name: 'Austin Sports Center' },
-      { name: 'Texas Volleyball League' },
-      { name: 'Youth Sports of America' },
-    ]
+  menuSwitch: {
+    title: "Nuestros Menús",
+    subtitle: "Dos opciones, el mismo increíble sabor.",
+    card1: {
+      title: "Comidas Rápidas",
+      description: "Hamburguesas, Hot Dogs, Sandwiches y más.",
+      imgAlt: "Hamburguesa y hot dog",
+    },
+    card2: {
+      title: "Snacks y Frutas",
+      description: "Fresas con crema, elotes, churros y bebidas.",
+      imgAlt: "Fresas con crema y elotes",
+    }
   },
-  programsHome: {
-    title: "Programas Para Todas las Edades",
-    subtitle: "Desde fundamentos hasta entrenamiento de élite, tenemos un programa para cada atleta.",
+  
+  // --- NUEVA SECCIÓN ---
+  specialOffer: {
+    title: "Oferta Especial",
+    subtitle: "Prueba nuestra",
+    itemName: "Hamburguesa Antojo",
+    description: "Doble carne, queso americano, tocineta crujiente, vegetales frescos y nuestra salsa secreta de la casa. ¡No te la puedes perder!",
+    button: "Ver en el Menú",
+  },
+
+  // --- NUEVO MENÚ 1 ---
+  menuFastFood: {
+    title: "Menú de Comidas",
     categories: [
       {
-        title: "Clínicas Juveniles (8-12 Años)",
-        description: "Aprende los fundamentos del voleibol en un ambiente divertido y de apoyo.",
-        link: "/es/programs#youth"
+        name: "Hamburguesas Antojo",
+        items: [
+          { name: "Clásica / Classic", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial.", price: "10.99" },
+          { name: "Especial de la Casa / House Special", description: "Doble carne, tocineta, queso cheddar y aros de cebolla.", price: "12.99" },
+          { name: "Grill VIP Special", description: "Hamburguesa Antojo con piña asada, queso de cabra y salsa BBQ.", price: "13.99" },
+        ]
       },
       {
-        // --- CAMBIO: "Teen Leagues" -> "Teen Clinics" ---
-        title: "Clínicas de Adolescentes (13-18 Años)",
-        description: "Juego competitivo diseñado para elevar habilidades y trabajo en equipo.",
-        link: "/es/programs#teen"
+        name: "Hot Dogs",
+        items: [
+          { name: "Clásico Americano / Classic American", description: "Salchicha, pan suave, encurtidos y mostaza.", price: "7.99" },
+          { name: "Especial Antojo", description: "Salchicha premium con chili, queso y jalapeños.", price: "9.99" },
+          { name: "Hot Dog Supremo", description: "Tocineta, cebolla caramelizada y salsas secretas.", price: "10.99" },
+        ]
       },
       {
-        // --- NUEVO: "Adult Clinics" ---
-        title: "Clínicas de Adultos (18+)",
-        description: "Mantente activo, conoce gente nueva y pule tus habilidades.",
-        link: "/es/programs#adultClinics"
+        name: "Sandwiches / Tortas",
+        items: [
+          { name: "Cubano / Cuban Sandwich", description: "Cerdo, jamón, queso suizo, pepinillos y mostaza.", price: "11.99" },
+          { name: "Torta Mexicana", description: "Con milanesa, frijoles, aguacate y queso.", price: "12.99" },
+        ]
+      },
+      {
+        name: "Acompañamientos / Sides",
+        items: [
+          { name: "Papas Fritas / French Fries", description: "Corte clásico, crujientes y saladas.", price: "4.99" },
+          { name: "Aros de Cebolla / Onion Rings", description: "Bañados en cerveza y perfectamente fritos.", price: "5.99" },
+          { name: "Papas con Queso / Cheesy Fries", description: "Con queso cheddar derretido y tocineta.", price: "6.99" },
+        ]
       }
     ]
   },
-  testimonials: {
-    title: "Lo Que Dice Nuestra Comunidad",
-    reviews: [
+
+  // --- NUEVO MENÚ 2 ---
+  menuSnacks: {
+    title: "Snacks, Postres y Bebidas",
+    categories: [
       {
-        quote: "Los entrenadores en Capital City son fantásticos. La confianza de mi hija se ha disparado desde que se unió. ¡Muy recomendable!",
-        author: "Sarah J.",
-        role: "Madre"
+        name: "Fresas con Crema",
+        items: [
+          { name: "Clásicas", description: "Fresas frescas con crema batida y leche condensada.", price: "7.99" },
+          { name: "Fresa VIP (Ours)", description: "Fresas cubiertas con chocolate y topping especial.", price: "9.99" },
+        ]
       },
       {
-        quote: "Excelentes instalaciones y clínicas bien organizadas. Es lo más destacado de mi semana.",
-        author: "Mike R.",
-        role: "Jugador de Clínica de Adultos"
+        name: "Elotes / Corn Cups",
+        items: [
+          { name: "Elote clásico", description: "Con mayonesa, queso cotija, chile y limón.", price: "5.99" },
+          { name: "Yogurt Ice Cream Bar", description: "Base de yogurt helado con 3 toppings a elección.", price: "6.99" },
+        ]
       },
       {
-        quote: "He aprendido mucho sobre técnica y estrategia. Las sesiones de entrenamiento son duras pero increíblemente gratificantes.",
-        author: "Emily K.",
-        role: "Atleta Adolescente"
+        name: "Churros",
+        items: [
+          { name: "Churros Rellenos", description: "Rellenos de arequipe, chocolate o fresa.", price: "6.50" },
+          { name: "Mini Churros", description: "Una porción de mini churros para compartir.", price: "5.50" },
+        ]
+      },
+      {
+        name: "Pancakes & Waffles",
+        items: [
+          { name: "Mini Pancakes", description: "Mini pancakes esponjosos con fruta y miel.", price: "8.99" },
+          { name: "Waffles", description: "Con crema batida y fresas.", price: "9.99" },
+        ]
+      },
+      {
+        name: "Más Antojos",
+        items: [
+          { name: "DoriNachos", description: "Doritos con elote, queso, crema y salsas.", price: "7.50" },
+          { name: "Café / Coffee", description: "Americano, Espresso, Latte o Matcha. Frío o caliente.", price: "4.50" },
+        ]
+      },
+      {
+        name: "Bebidas / Drinks",
+        items: [
+          { name: "Limonadas Naturales", description: "Sabores de fresa, mango o maracuyá.", price: "4.99" },
+          { name: "Malteadas / Milkshakes", description: "Vainilla, chocolate o fresa.", price: "6.99" },
+          { name: "Refrescos / Sodas", description: "Coca-Cola, Sprite, etc.", price: "2.99" },
+        ]
       }
     ]
   },
-  cta: {
-    title: "¿Listo para Elevar tu Juego?",
-    subtitle: "Únete a la familia de Capital City Volleyball hoy. Regístrate en un programa o contáctanos para más información.",
-    button: "Regístrate Ahora"
-  },
-  // --- CAMBIOS DE STATS ---
-  facilityStats: [
-    { number: "2", label: "Canchas Profesionales" },
-    { number: "5+", label: "Entrenadores Certificados" },
-    { number: "25+", label: "Atletas Entrenados" }
-  ],
-  upcomingLeagues: {
-    title: "Únete a la Acción",
-    // --- CAMBIO: Subtítulo actualizado ---
-    subtitle: "Las inscripciones para nuestros próximos torneos estarán disponibles.",
-    leagues: [
-      {
-        // --- CAMBIO ---
-        title: "Torneo de Mujeres",
-        subtitle: "", // Eliminado "Inscripciones Abiertas"
-        description: "Prepara a tu equipo para nuestro próximo torneo femenino.",
-        imageUrl: "/imgUpcoming-1.png"
+  
+ favorites: {
+    title: "Elige y Disfruta",
+    subtitle: "Los Favoritos de la Casa",
+    items: [
+      { 
+        name: "Hot Dog Supremo", 
+        description: "Salchicha premium, tocineta, cebolla caramelizada y salsas." 
       },
-      {
-        // --- CAMBIO ---
-        title: "Torneo de Hombres",
-        subtitle: "", // Eliminado "Inscripciones Abiertas"
-        description: "Compite en nuestro torneo de hombres de alto ritmo.",
-        imageUrl: "/imgUpcoming-2.png"
-      }
+      { 
+        name: "Elote Clásico", 
+        description: "Con mayonesa, queso cotija, chile y limón." 
+      },
+      { 
+        name: "Fresas con Crema", 
+        description: "Nuestra receta especial de crema y leche condensada." 
+      },
     ]
   },
-  homeMission: {
-    title: "No es Solo Cómo Juegas,",
-    subtitle: "Es Cómo Creces.",
-    p1: "Estamos dedicados a desarrollar a cada atleta para que se convierta en una persona de carácter, habilidad y confianza.",
-    vision: {
-      title: "Nuestra Visión",
-      description: "Ser el destino principal para el desarrollo del voleibol en el centro de Texas, fomentando el amor por el juego."
-    },
-    mission: {
-      title: "Nuestra Misión",
-      description: "Empoderar a los atletas con entrenamiento de élite en un ambiente positivo, formando líderes dentro y fuera de la cancha."
-    }
-  },
-  gallerySlider: {
-    title: "Nuestra Instalación en Acción"
-  },
-  aboutPage: {
-    title: "Sobre Capital City Volleyball",
-    p1: "Fundado en 2023, Capital City Volleyball nació de la pasión por el deporte y el deseo de construir una instalación de entrenamiento de primer nivel para la comunidad de Pflugerville y el norte de Austin. Creemos que el voleibol es más que un juego: es una herramienta para desarrollar el carácter, la disciplina y amistades para toda la vida.",
-    // --- CAMBIO: Eliminado "áreas dedicadas de entrenamiento de fuerza" ---
-    p2: "Nuestras instalaciones de última generación cuentan con múltiples canchas y un equipo de entrenadores profesionales con experiencia a nivel colegial y profesional. Estamos comprometidos a proporcionar un ambiente seguro, positivo y competitivo para atletas de todas las edades y niveles de habilidad.",
-    missionTitle: "Nuestra Misión",
-    missionP: "Empoderar a los atletas para que alcancen su máximo potencial dentro y fuera de la cancha a través de un entrenamiento de alta calidad, refuerzo positivo y una comunidad fuerte.",
-  },
-  programsPage: {
-    title: "Nuestros Programas",
-    intro: "Ofrecemos una gama completa de programas adaptados a diferentes grupos de edad y niveles de habilidad. Encuentra la opción perfecta para ti o tu hijo.",
-    sections: [
-      {
-        id: "youth",
-        title: "Clínicas Juveniles (8-12 Años)",
-        description: "Nuestras Clínicas Juveniles se centran en los fundamentos. Usamos ejercicios divertidos y entrenamiento positivo para enseñar pase, colocación, remate y servicio. ¡Perfecto para principiantes!",
-        features: ["Sesiones semanales de 1 hora", "Enfoque en fundamentos", "Baja proporción de jugadores por entrenador", "Ambiente positivo"]
-      },
-      {
-        // --- CAMBIOS ---
-        id: "teen",
-        title: "Academia de Adolescentes (13-18 Años)",
-        description: "Para atletas de secundaria y preparatoria que buscan avanzar en sus habilidades. Nuestra Academia ofrece entrenamiento posicional intensivo para mostrar su talento.",
-        features: ["Entrenamiento posicional", "Fuerza y acondicionamiento", "Orientación de preparación universitaria"]
-      },
-      {
-         // --- NUEVO ---
-        id: "adultClinics",
-        title: "Clínicas de Adultos (18+)",
-        description: "Clínicas enfocadas para adultos que buscan mejorar habilidades específicas, desde el servicio hasta la colocación.",
-        features: ["Sesiones de habilidades específicas", "Coaching profesional", "Ideal para todos los niveles"]
-      },
-      {
-        id: "private",
-        title: "Entrenamiento Privado",
-        description: "Sesiones individuales o en grupos pequeños con nuestros mejores entrenadores. Recibe retroalimentación personalizada y ejercicios específicos para perfeccionar tu juego.",
-        // --- CAMBIO ---
-        features: ["Atención personalizada", "Planes de ejercicios a medida", "Horarios flexibles"]
-      }
-      // Nota: Eliminé la sección "Adult Leagues" que estaba aquí pero no en la lista del cliente.
-    ]
-  },
-  contactPage: {
-    title: "Ponte en Contacto",
-    subtitle: "¿Tienes preguntas? ¿Quieres reservar una sesión privada? Envíanos un mensaje y nuestro equipo te responderá en breve.",
-    form: {
-      name: "Nombre Completo",
-      email: "Correo Electrónico",
-      phone: "Número de Teléfono (Opcional)",
-      subject: "Asunto",
-      message: "Tu Mensaje",
-      send: "Enviar Mensaje"
-    },
-    info: {
-      title: "Información de Contacto",
-      address: "Dirección",
-      phone: "Teléfono",
-      email: "Correo"
-    }
-  },
-  galleryPage: {
-    title: "Galería",
-    subtitle: "Un vistazo a la acción en Capital City Volleyball. ¡Más fotos próximamente!"
-  },
+
   footer: {
     rights: 'Todos los derechos reservados.',
-    quickLinks: 'Enlaces Rápidos',
-    contactInfo: 'Información de Contacto',
     followUs: 'Síguenos',
-    created: "Creado por RuedaLaRolaMedia.com"
-  },
-  cardPage: {
-    title: "Centro de Entrenamiento para Niños y Adultos",
-    web: "Visitar Sitio Web",
-    call: "Llámanos",
-    whatsapp: "Enviar WhatsApp",
-    email: "Enviar Correo",
-    location: "Ubicación (Google Maps)",
-    social: "Síguenos"
+    created: "Creado por Arknica (RuedaLaRolaMedia)"
   }
-}
+};
