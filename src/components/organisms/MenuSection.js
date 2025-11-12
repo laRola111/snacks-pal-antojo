@@ -10,17 +10,17 @@ export default function MenuSection({ id, title, categories }) {
       <div className="container mx-auto max-w-7xl px-4">
         
         {/* Título de la Sección del Menú */}
-        <motion.div
+        {/* <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }} // <-- CAMBIADO DE whileInView
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-4xl md:text-6xl font-bold font-sans text-primary">
             {title}
           </h2>
-        </motion.div>
+        </motion.div> */}
 
         {/* Contenido del Menú */}
         <div className="space-y-16">
@@ -28,7 +28,7 @@ export default function MenuSection({ id, title, categories }) {
             <motion.div
               key={category.name}
               initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              animate={{ opacity: 1, y: 0 }} // <-- CAMBIADO DE whileInView
               viewport={{ once: true, amount: 0.2 }}
               transition={{ duration: 0.6 }}
             >

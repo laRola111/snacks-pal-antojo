@@ -3,13 +3,17 @@
 
 import Link from 'next/link';
 import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
+import { MapPin, Phone } from 'lucide-react'; // <-- Iconos nuevos
 
 export default function Footer({ lang, dict }) {
   const socialLinks = [
     { icon: FaInstagram, href: '#', label: 'Instagram' },
     { icon: FaFacebook, href: '#', label: 'Facebook' },
-    { icon: FaWhatsapp, href: '#', label: 'WhatsApp' },
+    { icon: FaWhatsapp, href: `https://wa.me/15125718832`, label: 'WhatsApp' }, // <-- Link de Wpp actualizado
   ];
+
+  const address = '907 Kramer ln, Austin, Texas';
+  const phone = '512-571-8832';
 
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -29,6 +33,19 @@ export default function Footer({ lang, dict }) {
             </p>
           </div>
           
+          {/* --- NUEVA SECCIÓN DE CONTACTO --- */}
+          <div className="mb-6 md:mb-0">
+            <h4 className="font-bold mb-3 text-white">{dict.contact}</h4>
+            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
+              <MapPin size={16} className="text-secondary" />
+              <span className="text-sm">{address}</span>
+            </div>
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <Phone size={16} className="text-secondary" />
+              <a href="tel:+15125718832" className="text-sm hover:text-white transition-colors">{phone}</a>
+            </div>
+          </div>
+
           {/* Redes Sociales */}
           <div>
             <h4 className="font-bold mb-3 text-white">{dict.followUs}</h4>

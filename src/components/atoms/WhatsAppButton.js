@@ -6,20 +6,16 @@ import { motion } from 'framer-motion';
 import { FaWhatsapp } from 'react-icons/fa';
 
 export default function WhatsAppButton() {
-  // Datos ficticios como solicitaste
-  const phoneNumber = '15551234567'; // Número ficticio (formato internacional sin '+')
+  // Datos actualizados con la info de Austin, TX
+  const phoneNumber = '15125718832'; // <-- CAMBIADO
   const message = 'Hola, ¡me gustaría hacer un pedido!';
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
     <motion.div
-      className="fixed bottom-6 right-6 z-50"
-      initial={{ scale: 0, opacity: 0 }}
-      animate={{ scale: 1, opacity: 1 }}
-      transition={{ delay: 1, duration: 0.5, type: 'spring' }}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
+      // ... (el resto del componente sigue igual)
+// ...
     >
       <Link
         href={whatsappLink}

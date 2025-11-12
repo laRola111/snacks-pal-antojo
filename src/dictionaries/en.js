@@ -3,6 +3,8 @@ export const dictionary = {
   navbar: {
     home: 'Home',
     menu: 'Menu',
+    fastFood: 'Fast Food', // <-- NUEVO
+    snacks: 'Snacks & Fruits', // <-- NUEVO
   },
   hero: {
     title: "The Flavor You Deserve",
@@ -144,6 +146,7 @@ export const dictionary = {
   footer: {
     rights: 'All rights reserved.',
     followUs: 'Follow Us',
-    created: "Created by Arknica (RuedaLaRolaMedia)"
+    contact: 'Contact Us', // <-- NUEVO
+    created: "Created by RuedaLaRolaMedia.com"
   }
 };

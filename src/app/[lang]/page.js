@@ -5,8 +5,8 @@ import { getDictionary } from '@/lib/dictionaries';
 import HeroSection from '@/components/organisms/HeroSection';
 import MenuSwitch from '@/components/organisms/MenuSwitch';
 import SpecialOffer from '@/components/organisms/SpecialOffer';
-import MenuSection from '@/components/organisms/MenuSection';
-import FavoritesGrid from '@/components/organisms/FavoritesGrid'; // <-- AÑADIDO
+// import MenuSection from '@/components/organisms/MenuSection'; // <-- ELIMINADO
+import FavoritesGrid from '@/components/organisms/FavoritesGrid'; 
 
 /* --- 2. EL COMPONENTE VA DESPUÉS --- */
 export default async function HomePage({ params: { lang } }) {
@@ -23,19 +23,8 @@ export default async function HomePage({ params: { lang } }) {
       {/* 3. Sección de Oferta Especial */}
       <SpecialOffer lang={lang} dict={dict.specialOffer} />
 
-      {/* 4. Menú de Comidas Rápidas */}
-      <MenuSection 
-        id="fast-food" 
-        title={dict.menuFastFood.title}
-        categories={dict.menuFastFood.categories}
-      />
-
-      {/* 5. Menú de Snacks y Postres */}
-      <MenuSection 
-        id="snacks"
-        title={dict.menuSnacks.title}
-        categories={dict.menuSnacks.categories}
-      />
+      {/* 4. Menú de Comidas Rápidas - ELIMINADO */}
+      {/* 5. Menú de Snacks y Postres - ELIMINADO */}
 
       {/* 6. Sección de Favoritos */}
       <FavoritesGrid lang={lang} dict={dict.favorites} />

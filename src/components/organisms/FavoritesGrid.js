@@ -3,11 +3,11 @@
 
 import { motion } from 'framer-motion';
 
-// Imágenes placeholder de Unsplash para los favoritos
+// ... (FAVORITE_IMAGES sin cambios)
 const FAVORITE_IMAGES = {
-  item1: 'https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=80', // Hot Dog
-  item2: 'https://images.unsplash.com/photo-1584365604111-a89074a69c0f?auto=format&fit=crop&w=800&q=80', // Elote
-  item3: 'https://images.unsplash.com/photo-1576092762791-d01f94d8004f?auto=format&fit=crop&w=800&q=80', // Fresas
+  item1: 'https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=80',
+  item2: 'https://images.unsplash.com/photo-1584365604111-a89074a69c0f?auto=format&fit=crop&w=800&q=80',
+  item3: 'https://images.unsplash.com/photo-1576092762791-d01f94d8004f?auto=format&fit=crop&w=800&q=80',
 };
 
 export default function FavoritesGrid({ lang, dict }) {
@@ -31,7 +31,7 @@ export default function FavoritesGrid({ lang, dict }) {
         <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }} // <-- CAMBIADO DE whileInView
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
         >
@@ -51,10 +51,11 @@ export default function FavoritesGrid({ lang, dict }) {
               custom={i}
               variants={cardVariants}
               initial="hidden"
-              whileInView="visible"
+              animate="visible" // <-- CAMBIADO DE whileInView
               viewport={{ once: true, amount: 0.3 }}
               className="bg-white rounded-xl shadow-lg overflow-hidden group"
             >
+              {/* ... (resto del componente sin cambios) ... */}
               <div className="relative h-64 w-full overflow-hidden">
                 <img
                   src={FAVORITE_IMAGES[`item${i + 1}`]}

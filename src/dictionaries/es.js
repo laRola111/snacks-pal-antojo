@@ -3,6 +3,8 @@ export const dictionary = {
   navbar: {
     home: 'Inicio',
     menu: 'Menú',
+    fastFood: 'Comidas Rápidas', // <-- NUEVO
+    snacks: 'Snacks y Frutas', // <-- NUEVO
   },
   hero: {
     title: "El Sabor Que Te Mereces",
@@ -144,6 +146,7 @@ export const dictionary = {
   footer: {
     rights: 'Todos los derechos reservados.',
     followUs: 'Síguenos',
-    created: "Creado por Arknica (RuedaLaRolaMedia)"
+    contact: 'Contáctanos', // <-- NUEVO
+    created: "Creado por RuedaLaRolaMedia.com"
   }
 };

@@ -4,16 +4,15 @@
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 
-// Datos de las tarjetas (podríamos mover esto al diccionario si se repite)
 const menuCards = [
   {
     key: 'card1',
-    href: '#fast-food', // ID de la futura sección del menú
+    href: '/menu-fast-food',
     imageUrl: '/img/menu-fast-food.jpg',
   },
   {
     key: 'card2',
-    href: '#snacks', // ID de la futura sección del menú
+    href: '/menu-snacks',
     imageUrl: '/img/menu-snacks.jpg',
   },
 ];
@@ -39,7 +38,7 @@ export default function MenuSwitch({ lang, dict }) {
         <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          animate={{ opacity: 1, y: 0 }} // <-- CAMBIADO DE whileInView
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
         >
@@ -59,21 +58,18 @@ export default function MenuSwitch({ lang, dict }) {
               custom={i}
               variants={cardVariants}
               initial="hidden"
-              whileInView="visible"
+              animate="visible" // <-- CAMBIADO DE whileInView
               viewport={{ once: true, amount: 0.3 }}
             >
               <Link href={`/${lang}${card.href}`}>
+                {/* ... (resto del componente sin cambios) ... */}
                 <div className="relative h-96 w-full rounded-xl shadow-2xl overflow-hidden group transform transition-all duration-500 hover:scale-105">
-                  {/* Imagen de fondo */}
                   <img
                     src={card.imageUrl}
                     alt={dict[card.key].imgAlt}
                     className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
-                  {/* Overlay oscuro */}
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/30 transition-colors duration-300" />
-                  
-                  {/* Contenido de la tarjeta */}
                   <div className="relative z-10 flex flex-col items-center justify-end h-full p-8 text-center text-white">
                     <h3 className="text-3xl font-bold font-sans mb-2">
                       {dict[card.key].title}
