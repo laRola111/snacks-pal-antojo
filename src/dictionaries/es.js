@@ -3,15 +3,25 @@ export const dictionary = {
   navbar: {
     home: 'Inicio',
     menu: 'Menú',
-    fastFood: 'Comidas Rápidas', // <-- NUEVO
-    snacks: 'Snacks y Frutas', // <-- NUEVO
+    fastFood: 'Comidas Rápidas',
+    snacks: 'Snacks y Frutas',
   },
+
   hero: {
-    title: "El Sabor Que Te Mereces",
-    subtitle: "Descubre nuestras deliciosas comidas rápidas y snacks hechos al momento. ¡Perfecto para cualquier antojo!",
-    button: "Ver Menú",
-    imageAlt: "Deliciosa hamburguesa y papas fritas",
+    fastFood: {
+      title: "Comida Rápida",
+      subtitle: "Hamburguesas, Hot Dogs y más.",
+      button: "Ver Menú Fast Food",
+      imgAlt: "Hamburguesa deliciosa"
+    },
+    snacks: {
+      title: "Snacks y Frutas",
+      subtitle: "Fresas, Waffles y Antojos.",
+      button: "Ver Menú Snacks",
+      imgAlt: "Fresas con crema"
+    }
   },
+
   menuSwitch: {
     title: "Nuestros Menús",
     subtitle: "Dos opciones, el mismo increíble sabor.",
@@ -27,7 +37,6 @@ export const dictionary = {
     }
   },
   
-  // --- NUEVA SECCIÓN ---
   specialOffer: {
     title: "Oferta Especial",
     subtitle: "Prueba nuestra",
@@ -36,7 +45,7 @@ export const dictionary = {
     button: "Ver en el Menú",
   },
 
-  // --- NUEVO MENÚ 1 ---
+  // --- MENÚ FAST FOOD COMPLETO ---
   menuFastFood: {
     title: "Menú de Comidas",
     categories: [
@@ -74,7 +83,7 @@ export const dictionary = {
     ]
   },
 
-  // --- NUEVO MENÚ 2 ---
+  // --- MENÚ SNACKS COMPLETO ---
   menuSnacks: {
     title: "Snacks, Postres y Bebidas",
     categories: [
@@ -124,7 +133,7 @@ export const dictionary = {
     ]
   },
   
- favorites: {
+  favorites: {
     title: "Elige y Disfruta",
     subtitle: "Los Favoritos de la Casa",
     items: [
@@ -146,7 +155,9 @@ export const dictionary = {
   footer: {
     rights: 'Todos los derechos reservados.',
     followUs: 'Síguenos',
-    contact: 'Contáctanos', // <-- NUEVO
+    findUs: 'Encuéntranos en Austin, TX',
+    location: 'Austin, Texas',
+    contact: 'Contáctanos',
     created: "Creado por RuedaLaRolaMedia.com"
   }
 };

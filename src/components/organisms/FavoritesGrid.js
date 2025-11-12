@@ -2,13 +2,14 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
-// ... (FAVORITE_IMAGES sin cambios)
-const FAVORITE_IMAGES = {
-  item1: 'https://images.unsplash.com/photo-1550317138-10000687a72b?auto=format&fit=crop&w=800&q=80',
-  item2: 'https://images.unsplash.com/photo-1584365604111-a89074a69c0f?auto=format&fit=crop&w=800&q=80',
-  item3: 'https://images.unsplash.com/photo-1576092762791-d01f94d8004f?auto=format&fit=crop&w=800&q=80',
-};
+// Array de imágenes locales (corresponden al orden en es.js)
+const FAVORITE_IMAGES = [
+  '/hotd.png',       // Para "Hot Dog Supremo"
+  '/elote.png',      // Para "Elote Clásico" (asumiendo que tienes una imagen de elote llamada elote.png)
+  '/fresas.png'      // Para "Fresas con Crema"
+];
 
 export default function FavoritesGrid({ lang, dict }) {
   const cardVariants = {
@@ -31,7 +32,7 @@ export default function FavoritesGrid({ lang, dict }) {
         <motion.div
           className="mb-12 text-center"
           initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }} // <-- CAMBIADO DE whileInView
+          whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.5 }}
           transition={{ duration: 0.5 }}
         >
@@ -51,16 +52,18 @@ export default function FavoritesGrid({ lang, dict }) {
               custom={i}
               variants={cardVariants}
               initial="hidden"
-              animate="visible" // <-- CAMBIADO DE whileInView
+              whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
               className="bg-white rounded-xl shadow-lg overflow-hidden group"
             >
-              {/* ... (resto del componente sin cambios) ... */}
-              <div className="relative h-64 w-full overflow-hidden">
-                <img
-                  src={FAVORITE_IMAGES[`item${i + 1}`]}
+              <div className="relative h-64 w-full overflow-hidden flex items-center justify-center bg-white">
+                {/* --- CAMBIO AQUÍ --- */}
+                <Image
+                  src={FAVORITE_IMAGES[i]}
                   alt={item.name}
-                  className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+                  layout="fill"
+                  objectFit="contain" // <-- Cambiado de "cover" a "contain"
+                  className="w-full h-full transition-transform duration-500 ease-in-out group-hover:scale-105" // Ligera escala para efecto
                 />
               </div>
               <div className="p-6 text-center">

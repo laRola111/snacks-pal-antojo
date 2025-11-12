@@ -1,72 +1,83 @@
 // src/components/organisms/Footer.js
-'use client';
+import React from 'react';
+import { FaFacebook, FaInstagram, FaTiktok } from 'react-icons/fa';
+import Image from 'next/image';
 
-import Link from 'next/link';
-import { FaInstagram, FaFacebook, FaWhatsapp } from 'react-icons/fa';
-import { MapPin, Phone } from 'lucide-react'; // <-- Iconos nuevos
-
-export default function Footer({ lang, dict }) {
-  const socialLinks = [
-    { icon: FaInstagram, href: '#', label: 'Instagram' },
-    { icon: FaFacebook, href: '#', label: 'Facebook' },
-    { icon: FaWhatsapp, href: `https://wa.me/15125718832`, label: 'WhatsApp' }, // <-- Link de Wpp actualizado
-  ];
-
-  const address = '907 Kramer ln, Austin, Texas';
-  const phone = '512-571-8832';
+const Footer = ({ lang, dict }) => {
+  // 'dict' ya es el objeto 'footer' que layout.js le pasó.
+  // Por eso, accedemos a 'dict.followUs', 'dict.findUs', etc.
 
   return (
-    <footer className="bg-gray-900 text-gray-300">
-      <div className="container mx-auto max-w-7xl px-4 py-12">
-        <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          
-          {/* Logo y Copyright */}
-          <div className="mb-6 md:mb-0">
-            <Link href={`/${lang}`} className="text-2xl font-bold text-white font-sans">
-              Snacks<span className="text-secondary">PalAntojo</span>
-            </Link>
-            <p className="mt-2 text-sm text-gray-400">
-              © {new Date().getFullYear()} Snacks Pal Antojo. {dict.rights}
-            </p>
-            <p className="mt-1 text-xs text-gray-500">
-              {dict.created}
-            </p>
-          </div>
-          
-          {/* --- NUEVA SECCIÓN DE CONTACTO --- */}
-          <div className="mb-6 md:mb-0">
-            <h4 className="font-bold mb-3 text-white">{dict.contact}</h4>
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-              <MapPin size={16} className="text-secondary" />
-              <span className="text-sm">{address}</span>
-            </div>
-            <div className="flex items-center justify-center md:justify-start gap-2">
-              <Phone size={16} className="text-secondary" />
-              <a href="tel:+15125718832" className="text-sm hover:text-white transition-colors">{phone}</a>
-            </div>
-          </div>
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="container mx-auto px-4 text-center max-w-5xl">
+        <Image
+          src="/logoSnanks-2.png" 
+          alt="Snacks Pal Antojo ATX Logo"
+          width={150}
+          height={150}
+          className="mx-auto mb-6"
+        />
 
-          {/* Redes Sociales */}
-          <div>
-            <h4 className="font-bold mb-3 text-white">{dict.followUs}</h4>
-            <div className="flex justify-center md:justify-start space-x-6">
-              {socialLinks.map((social) => (
-                <a
-                  key={social.label}
-                  href={social.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={social.label}
-                  className="text-gray-400 hover:text-white transition-colors duration-300"
-                >
-                  <social.icon size={28} />
-                </a>
-              ))}
-            </div>
-          </div>
+        {/* ----- CORRECCIÓN DEL ERROR AQUÍ ----- */}
+        {/* Antes decía: dict.footer.followUs */}
+        <p className="font-semibold text-lg mb-4">{dict.followUs}</p>
+        {/* ------------------------------------- */}
 
+        <div className="flex justify-center space-x-6 mb-8">
+          <a 
+            href="https://www.facebook.com/profile.php?id=61583358463678" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Facebook Snacks & Fruits"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <FaFacebook size={28} />
+          </a>
+          <a 
+            href="https://www.facebook.com/profile.php?id=61583428869839" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Facebook Fast Food"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <FaFacebook size={28} />
+          </a>
+          <a 
+            href="https://www.instagram.com/snackspalantojoatx/" // <-- REVISAR
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="Instagram"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <FaInstagram size={28} />
+          </a>
+          <a 
+            href="http://tiktok.com/@snaks.pal.antojo" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            aria-label="TikTok"
+            className="text-gray-400 hover:text-white transition-colors"
+          >
+            <FaTiktok size={28} />
+          </a>
         </div>
+      
+        <p className="text-lg text-gray-300 mb-2">
+          {dict.findUs}
+        </p>
+        <p className="text-sm text-gray-400">
+          {dict.location}
+        </p>
+        <p className="text-sm text-gray-500 mt-8">
+          &copy; {new Date().getFullYear()} Snacks Pal Antojo ATX. {dict.rights}
+        </p>
+        <p className="text-sm text-gray-600 mt-2">
+          {dict.created}
+        </p>
+        {/* ------------------------------------- */}
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

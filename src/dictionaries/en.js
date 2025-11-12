@@ -3,47 +3,56 @@ export const dictionary = {
   navbar: {
     home: 'Home',
     menu: 'Menu',
-    fastFood: 'Fast Food', // <-- NUEVO
-    snacks: 'Snacks & Fruits', // <-- NUEVO
+    fastFood: 'Fast Food',
+    snacks: 'Snacks & Fruits',
   },
+
   hero: {
-    title: "The Flavor You Deserve",
-    subtitle: "Discover our delicious fast food and snacks, made fresh to order. Perfect for any craving!",
-    button: "View Menu",
-    imageAlt: "Delicious hamburger and french fries",
+    fastFood: {
+      title: "Fast Food",
+      subtitle: "Burgers, Hot Dogs, and more.",
+      button: "View Fast Food Menu",
+      imgAlt: "Delicious burger"
+    },
+    snacks: {
+      title: "Snacks & Fruits",
+      subtitle: "Strawberries, Waffles, and Cravings.",
+      button: "View Snacks Menu",
+      imgAlt: "Strawberries with cream"
+    }
   },
+
   menuSwitch: {
     title: "Our Menus",
-    subtitle: "Two options, same incredible flavor.",
+    subtitle: "Two options, same amazing flavor.",
     card1: {
       title: "Fast Food",
-      description: "Burgers, Hot Dogs, Sandwiches and more.",
+      description: "Burgers, Hot Dogs, Sandwiches, and more.",
       imgAlt: "Burger and hot dog",
     },
     card2: {
       title: "Snacks & Fruits",
-      description: "Strawberries & cream, corn cups, churros & drinks.",
-      imgAlt: "Strawberries with cream and corn cup",
+      description: "Strawberries & cream, corn cups, churros, and drinks.",
+      imgAlt: "Strawberries with cream and corn cups",
     }
   },
 
-  // --- NUEVA SECCIÓN (TRADUCIDA) ---
   specialOffer: {
     title: "Special Offer",
     subtitle: "Try our",
     itemName: "Antojo Burger",
-    description: "Double patty, american cheese, crispy bacon, fresh veggies, and our secret house sauce. You can't miss it!",
+    description: "Double patty, American cheese, crispy bacon, fresh veggies, and our secret house sauce. You can't miss it!",
     button: "View in Menu",
   },
 
-  // --- NUEVO MENÚ 1 (TRADUCIDO) ---
+  // --- COMPLETE FAST FOOD MENU ---
   menuFastFood: {
-    title: "Fast Food Menu",
+    title: "Food Menu",
     categories: [
       {
         name: "Antojo Burgers",
         items: [
-          { name: "Classic Burger", description: "House patty, cheese, lettuce, tomato, and special sauce.", price: "10.99" },
+          { name: "Classic", description: "House patty, cheese, lettuce, tomato, and special dressing.", price: "10.99" },
           { name: "House Special", description: "Double patty, bacon, cheddar cheese, and onion rings.", price: "12.99" },
           { name: "Grill VIP Special", description: "Antojo Burger with grilled pineapple, goat cheese, and BBQ sauce.", price: "13.99" },
         ]
@@ -59,8 +68,8 @@ export const dictionary = {
       {
         name: "Sandwiches / Tortas",
         items: [
-          { name: "Cuban Sandwich", description: "Pork, ham, swiss cheese, pickles, and mustard.", price: "11.99" },
-          { name: "Mexican Torta", description: "Breaded steak, beans, avocado, and cheese.", price: "12.99" },
+          { name: "Cuban Sandwich", description: "Pork, ham, Swiss cheese, pickles, and mustard.", price: "11.99" },
+          { name: "Torta Mexicana", description: "With 'milanesa' (breaded steak), beans, avocado, and cheese.", price: "12.99" },
         ]
       },
       {
@@ -68,13 +77,13 @@ export const dictionary = {
         items: [
           { name: "French Fries", description: "Classic cut, crispy and salty.", price: "4.99" },
           { name: "Onion Rings", description: "Beer-battered and perfectly fried.", price: "5.99" },
-          { name: "Cheesy Fries", description: "With melted cheddar cheese and bacon bits.", price: "6.99" },
+          { name: "Cheesy Fries", description: "With melted cheddar cheese and bacon.", price: "6.99" },
         ]
       }
     ]
   },
 
-  // --- NUEVO MENÚ 2 (TRADUCIDO) ---
+  // --- COMPLETE SNACKS MENU ---
   menuSnacks: {
     title: "Snacks, Desserts & Drinks",
     categories: [
@@ -82,21 +91,21 @@ export const dictionary = {
         name: "Strawberries & Cream",
         items: [
           { name: "Classic", description: "Fresh strawberries with whipped cream and condensed milk.", price: "7.99" },
-          { name: "VIP Strawberry (Ours)", description: "Chocolate-covered strawberries and special toppings.", price: "9.99" },
+          { name: "Fresa VIP (Ours)", description: "Strawberries covered in chocolate and special topping.", price: "9.99" },
         ]
       },
       {
         name: "Corn Cups",
         items: [
           { name: "Classic Corn Cup", description: "With mayo, cotija cheese, chili, and lime.", price: "5.99" },
-          { name: "Yogurt Ice Cream Bar", description: "Frozen yogurt base with 3 toppings of your choice.", price: "6.99" },
+          { name: "Yogurt Ice Cream Bar", description: "Yogurt ice cream base with 3 toppings of your choice.", price: "6.99" },
         ]
       },
       {
         name: "Churros",
         items: [
-          { name: "Filled Churros", description: "Filled with caramel, chocolate, or strawberry.", price: "6.50" },
-          { name: "Mini Churros", description: "A portion of mini churros for sharing.", price: "5.50" },
+          { name: "Filled Churros", description: "Filled with 'arequipe' (dulce de leche), chocolate, or strawberry.", price: "6.50" },
+          { name: "Mini Churros", description: "A portion of mini churros to share.", price: "5.50" },
         ]
       },
       {
@@ -109,8 +118,8 @@ export const dictionary = {
       {
         name: "More Cravings",
         items: [
-          { name: "DoriNachos", description: "Doritos with corn, cheese, cream, and salsas.", price: "7.50" },
-          { name: "Coffee", description: "Americano, Espresso, Latte, or Matcha. Hot or cold.", price: "4.50" },
+          { name: "DoriNachos", description: "Doritos with corn, cheese, cream, and sauces.", price: "7.50" },
+          { name: "Coffee", description: "Americano, Espresso, Latte, or Matcha. Iced or hot.", price: "4.50" },
         ]
       },
       {
@@ -118,15 +127,15 @@ export const dictionary = {
         items: [
           { name: "Natural Lemonades", description: "Strawberry, mango, or passion fruit flavors.", price: "4.99" },
           { name: "Milkshakes", description: "Vanilla, chocolate, or strawberry.", price: "6.99" },
-          { name: "Sodas", description: "Coke, Sprite, etc.", price: "2.99" },
+          { name: "Sodas", description: "Coca-Cola, Sprite, etc.", price: "2.99" },
         ]
       }
     ]
   },
-  
- favorites: {
+
+  favorites: {
     title: "Choose & Enjoy",
-    subtitle: "Our House Favorites",
+    subtitle: "The House Favorites",
     items: [
       { 
         name: "Supreme Hot Dog", 
@@ -138,7 +147,7 @@ export const dictionary = {
       },
       { 
         name: "Strawberries & Cream", 
-        description: "Our special cream and condensed milk recipe." 
+        description: "Our special recipe of cream and condensed milk." 
       },
     ]
   },
@@ -146,7 +155,9 @@ export const dictionary = {
   footer: {
     rights: 'All rights reserved.',
     followUs: 'Follow Us',
-    contact: 'Contact Us', // <-- NUEVO
+    findUs: 'Find us in Austin, TX',
+    location: 'Austin, Texas',
+    contact: 'Contact Us',
     created: "Created by RuedaLaRolaMedia.com"
   }
 };
