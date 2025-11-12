@@ -159,5 +159,49 @@ export const dictionary = {
     location: 'Austin, Texas',
     contact: 'Contact Us',
     created: "Created by RuedaLaRolaMedia.com"
-  }
+  },
+  aboutUs: {
+    title: "Our Passion, Your Craving",
+    subtitle: "We are a family dedicated to bringing authentic flavor.",
+    content: "At Snacks Pal Antojo, we believe food is more than just a dish; it's a moment. From our craft burgers to authentic strawberries and cream, every recipe is made with fresh ingredients and lots of love. We are proud to be part of the Austin community.",
+    imageAlt: "The Snacks Pal Antojo team cooking"
+  },
+
+  // --- NEW SECTION: TESTIMONIALS ---
+  testimonials: {
+    title: "What Our Customers Say",
+    subtitle: "Your opinion is our secret ingredient!",
+    reviews: [
+      {
+        quote: "The best strawberries and cream I've had in all of Austin! Authentic flavor and generous portions. 100% recommended.",
+        name: "Maria G.",
+        source: "Google Review"
+      },
+      {
+        quote: "The 'Antojo Burger' is next level. The meat is juicy, the ingredients are fresh, and the special sauce is incredible. I'll be back soon!",
+        name: "David R.",
+        source: "Facebook Recommendation"
+      },
+      {
+        quote: "Excellent service for my event. I ordered several snacks, and everything was delicious and on time. Very professional.",
+        name: "Ana P.",
+        source: "Catering Client"
+      }
+    ]
+  },
+
+  // --- NEW SECTION: CONTACT ---
+  contactForm: {
+    title: "Quote Your Event",
+    subtitle: "Have a party, meeting, or corporate event? Let us handle the flavor! Fill out the form, and we'll contact you.",
+    labels: {
+      name: "Your Name",
+      email: "Your Email",
+      phone: "Your Phone (Optional)",
+      message: "Tell us about your event (Date, # people, etc.)",
+    },
+    button: "Send Request",
+    success: "Message sent! We will contact you soon.",
+    error: "Error sending. Please try again."
+  },
 };

@@ -159,5 +159,49 @@ export const dictionary = {
     location: 'Austin, Texas',
     contact: 'Contáctanos',
     created: "Creado por RuedaLaRolaMedia.com"
-  }
+  },
+  aboutUs: {
+    title: "Nuestra Pasión, Tu Antojo",
+    subtitle: "Somos una familia dedicada a traer el auténtico sabor.",
+    content: "En Snacks Pal Antojo, creemos que la comida es más que solo un platillo; es un momento. Desde nuestras hamburguesas artesanales hasta las auténticas fresas con crema, cada receta está hecha con ingredientes frescos y mucho cariño. Estamos orgullosos de ser parte de la comunidad de Austin.",
+    imageAlt: "El equipo de Snacks Pal Antojo cocinando"
+  },
+
+  // --- NUEVA SECCIÓN: TESTIMONIOS ---
+  testimonials: {
+    title: "Lo Que Dicen Nuestros Clientes",
+    subtitle: "¡Tu opinión es nuestro ingrediente secreto!",
+    reviews: [
+      {
+        quote: "¡Las mejores fresas con crema que he probado en todo Austin! Sabor auténtico y porciones generosas. 100% recomendado.",
+        name: "Maria G.",
+        source: "Reseña de Google"
+      },
+      {
+        quote: "La Hamburguesa Antojo es de otro nivel. La carne es jugosa, los ingredientes frescos y la salsa especial es increíble. ¡Volveré pronto!",
+        name: "David R.",
+        source: "Recomendación en Facebook"
+      },
+      {
+        quote: "Excelente servicio para mi evento. Pedí varios snacks y todo estuvo delicioso y a tiempo. Muy profesionales.",
+        name: "Ana P.",
+        source: "Cliente de Catering"
+      }
+    ]
+  },
+
+  // --- NUEVA SECCIÓN: CONTACTO ---
+  contactForm: {
+    title: "Cotiza Tu Evento",
+    subtitle: "¿Tienes una fiesta, reunión o evento corporativo? ¡Déjanos encargarnos del sabor! Llena el formulario y te contactaremos.",
+    labels: {
+      name: "Tu Nombre",
+      email: "Tu Correo Electrónico",
+      phone: "Tu Teléfono (Opcional)",
+      message: "Cuéntanos sobre tu evento (Fecha, # personas, etc.)",
+    },
+    button: "Enviar Solicitud",
+    success: "¡Mensaje enviado! Te contactaremos pronto.",
+    error: "Error al enviar. Intenta de nuevo."
+  },
 };
