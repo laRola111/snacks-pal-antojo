@@ -4,7 +4,7 @@ export const dictionary = {
     home: 'Inicio',
     menu: 'Menú',
     fastFood: 'Comida Rápida',
-    snacks: 'Snacks y Frutas',
+    snacks: 'Snacks y Postres',
   },
 
   hero: {
@@ -15,7 +15,7 @@ export const dictionary = {
       imgAlt: "Hamburguesa deliciosa"
     },
     snacks: {
-      title: "Snacks y Frutas",
+      title: "Snacks y Postres",
       subtitle: "Fresas, Waffles y Antojos.",
       button: "Ver Menú Snacks",
       imgAlt: "Fresas con crema"
@@ -31,7 +31,7 @@ export const dictionary = {
       imgAlt: "Hamburguesa y hot dog",
     },
     card2: {
-      title: "Snacks y Frutas",
+      title: "Snacks y Postres",
       description: "Fresas con crema, elotes, churros y bebidas.",
       imgAlt: "Fresas con crema y elotes",
     }
