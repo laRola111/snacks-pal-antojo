@@ -3,7 +3,7 @@ export const dictionary = {
   navbar: {
     home: 'Inicio',
     menu: 'Menú',
-    fastFood: 'Comidas Rápidas',
+    fastFood: 'Comida Rápida',
     snacks: 'Snacks y Frutas',
   },
 
@@ -45,45 +45,45 @@ export const dictionary = {
     button: "Ver en el Menú",
   },
 
-  // --- MENÚ FAST FOOD COMPLETO ---
+  // --- MENÚ FAST FOOD (Solo Español) ---
   menuFastFood: {
     title: "Menú de Comidas",
     categories: [
       {
         name: "Hamburguesas Antojo",
         items: [
-          { name: "Clásica / Classic", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial.", price: "10.99" },
-          { name: "Especial de la Casa / House Special", description: "Doble carne, tocineta, queso cheddar y aros de cebolla.", price: "12.99" },
+          { name: "Clásica", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial.", price: "10.99" },
+          { name: "Especial de la Casa", description: "Doble carne, tocineta, queso cheddar y aros de cebolla.", price: "12.99" },
           { name: "Grill VIP Special", description: "Hamburguesa Antojo con piña asada, queso de cabra y salsa BBQ.", price: "13.99" },
         ]
       },
       {
         name: "Hot Dogs",
         items: [
-          { name: "Clásico Americano / Classic American", description: "Salchicha, pan suave, encurtidos y mostaza.", price: "7.99" },
+          { name: "Clásico Americano", description: "Salchicha, pan suave, encurtidos y mostaza.", price: "7.99" },
           { name: "Especial Antojo", description: "Salchicha premium con chili, queso y jalapeños.", price: "9.99" },
           { name: "Hot Dog Supremo", description: "Tocineta, cebolla caramelizada y salsas secretas.", price: "10.99" },
         ]
       },
       {
-        name: "Sandwiches / Tortas",
+        name: "Sandwiches y Tortas",
         items: [
-          { name: "Cubano / Cuban Sandwich", description: "Cerdo, jamón, queso suizo, pepinillos y mostaza.", price: "11.99" },
+          { name: "Sandwich Cubano", description: "Cerdo, jamón, queso suizo, pepinillos y mostaza.", price: "11.99" },
           { name: "Torta Mexicana", description: "Con milanesa, frijoles, aguacate y queso.", price: "12.99" },
         ]
       },
       {
-        name: "Acompañamientos / Sides",
+        name: "Acompañamientos",
         items: [
-          { name: "Papas Fritas / French Fries", description: "Corte clásico, crujientes y saladas.", price: "4.99" },
-          { name: "Aros de Cebolla / Onion Rings", description: "Bañados en cerveza y perfectamente fritos.", price: "5.99" },
-          { name: "Papas con Queso / Cheesy Fries", description: "Con queso cheddar derretido y tocineta.", price: "6.99" },
+          { name: "Papas Fritas", description: "Corte clásico, crujientes y saladas.", price: "4.99" },
+          { name: "Aros de Cebolla", description: "Bañados en cerveza y perfectamente fritos.", price: "5.99" },
+          { name: "Papas con Queso", description: "Con queso cheddar derretido y tocineta.", price: "6.99" },
         ]
       }
     ]
   },
 
-  // --- MENÚ SNACKS COMPLETO ---
+  // --- MENÚ SNACKS (Solo Español) ---
   menuSnacks: {
     title: "Snacks, Postres y Bebidas",
     categories: [
@@ -91,14 +91,14 @@ export const dictionary = {
         name: "Fresas con Crema",
         items: [
           { name: "Clásicas", description: "Fresas frescas con crema batida y leche condensada.", price: "7.99" },
-          { name: "Fresa VIP (Ours)", description: "Fresas cubiertas con chocolate y topping especial.", price: "9.99" },
+          { name: "Fresa VIP", description: "Fresas cubiertas con chocolate y topping especial.", price: "9.99" },
         ]
       },
       {
-        name: "Elotes / Corn Cups",
+        name: "Elotes",
         items: [
-          { name: "Elote clásico", description: "Con mayonesa, queso cotija, chile y limón.", price: "5.99" },
-          { name: "Yogurt Ice Cream Bar", description: "Base de yogurt helado con 3 toppings a elección.", price: "6.99" },
+          { name: "Elote Clásico", description: "Con mayonesa, queso cotija, chile y limón.", price: "5.99" },
+          { name: "Barra de Yogurt Helado", description: "Base de yogurt helado con 3 toppings a elección.", price: "6.99" },
         ]
       },
       {
@@ -109,7 +109,7 @@ export const dictionary = {
         ]
       },
       {
-        name: "Pancakes & Waffles",
+        name: "Pancakes y Waffles",
         items: [
           { name: "Mini Pancakes", description: "Mini pancakes esponjosos con fruta y miel.", price: "8.99" },
           { name: "Waffles", description: "Con crema batida y fresas.", price: "9.99" },
@@ -119,15 +119,15 @@ export const dictionary = {
         name: "Más Antojos",
         items: [
           { name: "DoriNachos", description: "Doritos con elote, queso, crema y salsas.", price: "7.50" },
-          { name: "Café / Coffee", description: "Americano, Espresso, Latte o Matcha. Frío o caliente.", price: "4.50" },
+          { name: "Café", description: "Americano, Espresso, Latte o Matcha. Frío o caliente.", price: "4.50" },
         ]
       },
       {
-        name: "Bebidas / Drinks",
+        name: "Bebidas",
         items: [
           { name: "Limonadas Naturales", description: "Sabores de fresa, mango o maracuyá.", price: "4.99" },
-          { name: "Malteadas / Milkshakes", description: "Vainilla, chocolate o fresa.", price: "6.99" },
-          { name: "Refrescos / Sodas", description: "Coca-Cola, Sprite, etc.", price: "2.99" },
+          { name: "Malteadas", description: "Vainilla, chocolate o fresa.", price: "6.99" },
+          { name: "Refrescos", description: "Coca-Cola, Sprite, etc.", price: "2.99" },
         ]
       }
     ]
@@ -160,6 +160,7 @@ export const dictionary = {
     contact: 'Contáctanos',
     created: "Creado por RuedaLaRolaMedia.com"
   },
+  
   aboutUs: {
     title: "Nuestra Pasión, Tu Antojo",
     subtitle: "Somos una familia dedicada a traer el auténtico sabor.",
@@ -167,7 +168,6 @@ export const dictionary = {
     imageAlt: "El equipo de Snacks Pal Antojo cocinando"
   },
 
-  // --- NUEVA SECCIÓN: TESTIMONIOS ---
   testimonials: {
     title: "Lo Que Dicen Nuestros Clientes",
     subtitle: "¡Tu opinión es nuestro ingrediente secreto!",
@@ -190,7 +190,6 @@ export const dictionary = {
     ]
   },
 
-  // --- NUEVA SECCIÓN: CONTACTO ---
   contactForm: {
     title: "Cotiza Tu Evento",
     subtitle: "¿Tienes una fiesta, reunión o evento corporativo? ¡Déjanos encargarnos del sabor! Llena el formulario y te contactaremos.",

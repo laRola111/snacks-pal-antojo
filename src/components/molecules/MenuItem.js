@@ -27,9 +27,9 @@ export default function MenuItem({ name, description, price }) {
       <div className="p-6 flex flex-col flex-grow">
         <h4 className="text-xl font-bold font-sans text-primary-dark">{name}</h4>
         <p className="text-muted mt-2 flex-grow">{description}</p>
-        <div className="mt-4 text-2xl font-bold font-sans text-secondary-dark">
+        {/* <div className="mt-4 text-2xl font-bold font-sans text-secondary-dark">
           ${price}
-        </div>
+        </div> */}
       </div>
     </motion.div>
   );

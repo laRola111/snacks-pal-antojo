@@ -23,7 +23,7 @@ export default function SpecialOffer({ lang, dict }) {
               {dict.title}
             </span>
             
-            <motion.div 
+            {/* <motion.div 
               className="absolute top-0 right-0 md:right-10 bg-secondary text-foreground font-bold font-sans text-xl px-5 py-2 rounded-lg shadow-lg z-30"
               initial={{ opacity: 0, scale: 0.5, rotate: 15 }}
               whileInView={{ opacity: 1, scale: 1, rotate: 0 }}
@@ -31,7 +31,7 @@ export default function SpecialOffer({ lang, dict }) {
               transition={{ duration: 0.5, delay: 0.6, type: 'spring', stiffness: 100 }}
             >
               $12.99
-            </motion.div>
+            </motion.div> */}
             
             <h2 className="mt-2 text-3xl md:text-5xl font-bold font-sans text-foreground">
               {dict.subtitle} <br className="hidden md:block" />

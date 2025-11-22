@@ -45,7 +45,7 @@ export const dictionary = {
     button: "View in Menu",
   },
 
-  // --- COMPLETE FAST FOOD MENU ---
+  // --- FAST FOOD MENU (English Only) ---
   menuFastFood: {
     title: "Food Menu",
     categories: [
@@ -66,10 +66,10 @@ export const dictionary = {
         ]
       },
       {
-        name: "Sandwiches / Tortas",
+        name: "Sandwiches & Tortas",
         items: [
           { name: "Cuban Sandwich", description: "Pork, ham, Swiss cheese, pickles, and mustard.", price: "11.99" },
-          { name: "Torta Mexicana", description: "With 'milanesa' (breaded steak), beans, avocado, and cheese.", price: "12.99" },
+          { name: "Mexican Torta", description: "With 'milanesa' (breaded steak), beans, avocado, and cheese.", price: "12.99" },
         ]
       },
       {
@@ -83,7 +83,7 @@ export const dictionary = {
     ]
   },
 
-  // --- COMPLETE SNACKS MENU ---
+  // --- SNACKS MENU (English Only) ---
   menuSnacks: {
     title: "Snacks, Desserts & Drinks",
     categories: [
@@ -95,7 +95,7 @@ export const dictionary = {
         ]
       },
       {
-        name: "Corn Cups",
+        name: "Corn Cups (Elotes)",
         items: [
           { name: "Classic Corn Cup", description: "With mayo, cotija cheese, chili, and lime.", price: "5.99" },
           { name: "Yogurt Ice Cream Bar", description: "Yogurt ice cream base with 3 toppings of your choice.", price: "6.99" },
@@ -160,6 +160,7 @@ export const dictionary = {
     contact: 'Contact Us',
     created: "Created by RuedaLaRolaMedia.com"
   },
+  
   aboutUs: {
     title: "Our Passion, Your Craving",
     subtitle: "We are a family dedicated to bringing authentic flavor.",
@@ -167,7 +168,6 @@ export const dictionary = {
     imageAlt: "The Snacks Pal Antojo team cooking"
   },
 
-  // --- NEW SECTION: TESTIMONIALS ---
   testimonials: {
     title: "What Our Customers Say",
     subtitle: "Your opinion is our secret ingredient!",
@@ -190,7 +190,6 @@ export const dictionary = {
     ]
   },
 
-  // --- NEW SECTION: CONTACT ---
   contactForm: {
     title: "Quote Your Event",
     subtitle: "Have a party, meeting, or corporate event? Let us handle the flavor! Fill out the form, and we'll contact you.",
