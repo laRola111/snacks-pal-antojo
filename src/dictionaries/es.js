@@ -27,7 +27,7 @@ export const dictionary = {
     subtitle: "Dos opciones, el mismo increíble sabor.",
     card1: {
       title: "Comidas Rápidas",
-      description: "Hamburguesas, Hot Dogs, Sandwiches y más.",
+      description: "Hamburguesas, Hot Dogs y Papas.",
       imgAlt: "Hamburguesa y hot dog",
     },
     card2: {
@@ -45,89 +45,81 @@ export const dictionary = {
     button: "Ver en el Menú",
   },
 
-  // --- MENÚ FAST FOOD (Solo Español) ---
+  // --- MENÚ FAST FOOD (Sin Precios) ---
   menuFastFood: {
     title: "Menú de Comidas",
     categories: [
       {
         name: "Hamburguesas Antojo",
         items: [
-          { name: "Clásica", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial.", price: "10.99" },
-          { name: "Especial de la Casa", description: "Doble carne, tocineta, queso cheddar y aros de cebolla.", price: "12.99" },
-          { name: "Grill VIP Special", description: "Hamburguesa Antojo con piña asada, queso de cabra y salsa BBQ.", price: "13.99" },
+          { name: "Clásica", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial." },
+          { name: "Especial de la Casa", description: "Doble carne, tocineta, queso cheddar y aros de cebolla." },
         ]
       },
       {
         name: "Hot Dogs",
         items: [
-          { name: "Clásico Americano", description: "Salchicha, pan suave, encurtidos y mostaza.", price: "7.99" },
-          { name: "Especial Antojo", description: "Salchicha premium con chili, queso y jalapeños.", price: "9.99" },
-          { name: "Hot Dog Supremo", description: "Tocineta, cebolla caramelizada y salsas secretas.", price: "10.99" },
-        ]
-      },
-      {
-        name: "Sandwiches y Tortas",
-        items: [
-          { name: "Sandwich Cubano", description: "Cerdo, jamón, queso suizo, pepinillos y mostaza.", price: "11.99" },
-          { name: "Torta Mexicana", description: "Con milanesa, frijoles, aguacate y queso.", price: "12.99" },
+          { name: "Clásico Americano", description: "Salchicha, pan suave, encurtidos y mostaza." },
+          { name: "Especial Antojo", description: "Salchicha premium con chili, queso y jalapeños." },
+          { name: "Hot Dog Supremo", description: "Tocineta, cebolla caramelizada y salsas secretas." },
         ]
       },
       {
         name: "Acompañamientos",
         items: [
-          { name: "Papas Fritas", description: "Corte clásico, crujientes y saladas.", price: "4.99" },
-          { name: "Aros de Cebolla", description: "Bañados en cerveza y perfectamente fritos.", price: "5.99" },
-          { name: "Papas con Queso", description: "Con queso cheddar derretido y tocineta.", price: "6.99" },
+          { name: "Papas Fritas", description: "Corte clásico, crujientes y saladas." },
+          { name: "Aros de Cebolla", description: "Bañados en cerveza y perfectamente fritos." },
+          { name: "Papas con Queso", description: "Con queso cheddar derretido y tocineta." },
         ]
       }
     ]
   },
 
-  // --- MENÚ SNACKS (Solo Español) ---
+  // --- MENÚ SNACKS (Sin Precios) ---
   menuSnacks: {
     title: "Snacks, Postres y Bebidas",
     categories: [
       {
         name: "Fresas con Crema",
         items: [
-          { name: "Clásicas", description: "Fresas frescas con crema batida y leche condensada.", price: "7.99" },
-          { name: "Fresa VIP", description: "Fresas cubiertas con chocolate y topping especial.", price: "9.99" },
+          { name: "Clásicas", description: "Fresas frescas con crema batida y leche condensada." },
+          { name: "Fresa VIP", description: "Fresas cubiertas con chocolate y topping especial." },
         ]
       },
       {
         name: "Elotes",
         items: [
-          { name: "Elote Clásico", description: "Con mayonesa, queso cotija, chile y limón.", price: "5.99" },
-          { name: "Barra de Yogurt Helado", description: "Base de yogurt helado con 3 toppings a elección.", price: "6.99" },
+          { name: "Elote Clásico", description: "Con mayonesa, queso cotija, chile y limón." },
+          { name: "Barra de Yogurt Helado", description: "Base de yogurt helado con 3 toppings a elección." },
         ]
       },
       {
         name: "Churros",
         items: [
-          { name: "Churros Rellenos", description: "Rellenos de arequipe, chocolate o fresa.", price: "6.50" },
-          { name: "Mini Churros", description: "Una porción de mini churros para compartir.", price: "5.50" },
+          { name: "Churros Rellenos", description: "Rellenos de arequipe, chocolate o fresa." },
+          { name: "Mini Churros", description: "Una porción de mini churros para compartir." },
         ]
       },
       {
         name: "Pancakes y Waffles",
         items: [
-          { name: "Mini Pancakes", description: "Mini pancakes esponjosos con fruta y miel.", price: "8.99" },
-          { name: "Waffles", description: "Con crema batida y fresas.", price: "9.99" },
+          { name: "Mini Pancakes", description: "Mini pancakes esponjosos con fruta y miel." },
+          { name: "Waffles", description: "Con crema batida y fresas." },
         ]
       },
       {
         name: "Más Antojos",
         items: [
-          { name: "DoriNachos", description: "Doritos con elote, queso, crema y salsas.", price: "7.50" },
-          { name: "Café", description: "Americano, Espresso, Latte o Matcha. Frío o caliente.", price: "4.50" },
+          { name: "DoriNachos", description: "Doritos con elote, queso, crema y salsas." },
+          { name: "Café", description: "Americano, Espresso, Latte o Matcha. Frío o caliente." },
         ]
       },
       {
         name: "Bebidas",
         items: [
-          { name: "Limonadas Naturales", description: "Sabores de fresa, mango o maracuyá.", price: "4.99" },
-          { name: "Malteadas", description: "Vainilla, chocolate o fresa.", price: "6.99" },
-          { name: "Refrescos", description: "Coca-Cola, Sprite, etc.", price: "2.99" },
+          { name: "Limonadas Naturales", description: "Sabores de fresa, mango o maracuyá." },
+          { name: "Malteadas", description: "Vainilla, chocolate o fresa." },
+          { name: "Refrescos", description: "Coca-Cola, Sprite, etc." },
         ]
       }
     ]
