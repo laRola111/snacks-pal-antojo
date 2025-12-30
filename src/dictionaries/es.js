@@ -10,189 +10,203 @@ export const dictionary = {
   hero: {
     fastFood: {
       title: "Comida Rápida",
-      subtitle: "Hamburguesas, Hot Dogs y más.",
-      button: "Ver Menú Fast Food",
-      imgAlt: "Hamburguesa deliciosa"
+      subtitle: "Hamburguesas, Hot Dogs y el auténtico sabor callejero.",
+      button: "Ver Menú Salado",
+      imgAlt: "Hamburguesa doble carne"
     },
     snacks: {
       title: "Snacks y Postres",
-      subtitle: "Fresas, Waffles y Antojos.",
-      button: "Ver Menú Snacks",
-      imgAlt: "Fresas con crema"
+      subtitle: "Fresas, Churros y Antojos Dulces.",
+      button: "Ver Menú Dulce",
+      imgAlt: "Fresas con crema vaso grande"
     }
   },
 
   menuSwitch: {
     title: "Nuestros Menús",
-    subtitle: "Dos opciones, el mismo increíble sabor.",
+    subtitle: "Dos mundos de sabor, un solo lugar.",
     card1: {
-      title: "Comidas Rápidas",
-      description: "Hamburguesas, Hot Dogs y Papas.",
+      title: "Menú Salado",
+      description: "Hamburguesas, Hot Dogs, Elotes y Dorinachos.",
       imgAlt: "Hamburguesa y hot dog",
     },
     card2: {
-      title: "Snacks y Postres",
-      description: "Fresas con crema, elotes, churros y bebidas.",
-      imgAlt: "Fresas con crema y elotes",
+      title: "Menú Dulce",
+      description: "Fresas con crema, Churros, Waffles y Helados.",
+      imgAlt: "Fresas con crema y churros",
     }
   },
-  
-  specialOffer: {
-    title: "Oferta Especial",
-    subtitle: "Prueba nuestra",
-    itemName: "Hamburguesa Antojo",
-    description: "Doble carne, queso americano, tocineta crujiente, vegetales frescos y nuestra salsa secreta de la casa. ¡No te la puedes perder!",
-    button: "Ver en el Menú",
-  },
 
-  // --- MENÚ FAST FOOD (Sin Precios) ---
+  // --- MENÚ "SALTY" (Imagen Roja - Hamburguesas/Hot Dogs) ---
   menuFastFood: {
-    title: "Menú de Comidas",
+    title: "Hamburguesas y Antojos Salados",
     categories: [
       {
-        name: "Hamburguesas Antojo",
+        name: "Hamburguesas / Burgers",
         items: [
-          { name: "Clásica", description: "Carne de la casa, queso, lechuga, tomate y aderezo especial." },
-          { name: "Especial de la Casa", description: "Doble carne, tocineta, queso cheddar y aros de cebolla." },
+          { 
+            name: "Hamburguesa Clásica", 
+            description: "Carne a la parrilla, queso, lechuga, tomate y aderezo especial." 
+          },
+          { 
+            name: "Hamburguesa Antojo", 
+            description: "Doble carne, tocino, queso derretido y salsa secreta." 
+          },
         ]
       },
       {
         name: "Hot Dogs",
         items: [
-          { name: "Clásico Americano", description: "Salchicha, pan suave, encurtidos y mostaza." },
-          { name: "Especial Antojo", description: "Salchicha premium con chili, queso y jalapeños." },
-          { name: "Hot Dog Supremo", description: "Tocineta, cebolla caramelizada y salsas secretas." },
+          { 
+            name: "Hot Dog Antojo", 
+            description: "Envuelto en tocino, mayonesa, mostaza, kétchup, vegetales. (Opcional: Cebolla asada, chiles asados, Salsa Valentina)." 
+          },
         ]
       },
       {
-        name: "Acompañamientos",
+        name: "Sandwich", // En la imagen están en el menú rojo
         items: [
-          { name: "Papas Fritas", description: "Corte clásico, crujientes y saladas." },
-          { name: "Aros de Cebolla", description: "Bañados en cerveza y perfectamente fritos." },
-          { name: "Papas con Queso", description: "Con queso cheddar derretido y tocineta." },
+          {
+            name: "Chicken Sandwich", 
+            description: "Pollo crujiente con queso Pepper Jack, lechuga, tomates, pepinillos y salsa especial." 
+          },
+        ]
+      },
+      {
+        name: "Elotes y Dorinachos", // En la imagen están en el menú rojo
+        items: [
+          { 
+            name: "Elote en Vaso (Corn Cup)", 
+            description: "Preparado con Mantequilla, Mayonesa McCormick, Chile en polvo y Queso Cotija." 
+          },
+          { 
+            name: "Elote en Mazorca (Corn on the Cob)", 
+            description: "Estilo callejero. Toppings: Mantequilla, Mayonesa McCormick, Chile en polvo, Queso Cotija." 
+          },
+          { 
+            name: "Dorinachos", 
+            description: "Doritos con queso, jalapeño y elotes (opcional)." 
+          },
+        ]
+      },
+       
+      {
+        name: "Acompañamientos / Sides",
+        items: [
+          { name: "Papas Fritas", description: "Clásicas papas crujientes con sal marina." },
+          { name: "Aros de Cebolla", description: "Empanizados dorados al punto perfecto." },
+          { name: "Papas con Queso", description: "Con queso derretido y salsa especial." },
+        ]
+      },
+      {
+        name: "Bebidas / Drinks",
+        items: [
+          { name: "Refrescos", description: "Variedad de sabores." },
+          { name: "Limonadas", description: "Naturales, refrescantes y coloridas." },
+          { name: "Malteadas", description: "Fresa, chocolate o vainilla." },
         ]
       }
     ]
   },
 
-  // --- MENÚ SNACKS (Sin Precios) ---
+  // --- MENÚ "SWEET" (Imagen Rosa - Fresas/Churros) ---
   menuSnacks: {
-    title: "Snacks, Postres y Bebidas",
+    title: "Postres y Dulces",
     categories: [
       {
         name: "Fresas con Crema",
         items: [
-          { name: "Clásicas", description: "Fresas frescas con crema batida y leche condensada." },
-          { name: "Fresa VIP", description: "Fresas cubiertas con chocolate y topping especial." },
-        ]
-      },
-      {
-        name: "Elotes",
-        items: [
-          { name: "Elote Clásico", description: "Con mayonesa, queso cotija, chile y limón." },
-          { name: "Barra de Yogurt Helado", description: "Base de yogurt helado con 3 toppings a elección." },
+          { 
+            name: "Clásica con Crema", 
+            description: "Fresas bañadas con la crema dulce de la casa. (Chica / Mediana / Grande)." 
+          },
+          { 
+            name: "Fresas VIP (Dubai)", 
+            description: "Bañadas en chocolate premium con pistacho, kataifi y estilo Dubai." 
+          },
         ]
       },
       {
         name: "Churros",
         items: [
-          { name: "Churros Rellenos", description: "Rellenos de arequipe, chocolate o fresa." },
-          { name: "Mini Churros", description: "Una porción de mini churros para compartir." },
+          { name: "Churro Clásico", description: "El tradicional azúcar y canela." },
+          { name: "Churro Relleno", description: "Rellenos: Chocolate, Cajeta, Fresa, Lechera, Nutella." },
+          { name: "Mini Churros", description: "Porción de bocados crujientes." },
+          { name: "Caja Variada de Churros", description: "Mixed Churro Box con salsas o topping de elección." },
         ]
       },
       {
-        name: "Pancakes y Waffles",
+        name: "Helados y Postres",
         items: [
-          { name: "Mini Pancakes", description: "Mini pancakes esponjosos con fruta y miel." },
-          { name: "Waffles", description: "Con crema batida y fresas." },
+          { 
+            name: "Helado de Yogurt", 
+            description: "Con toppings y coberturas a elección (Salsas de sabor)." 
+          },
+          { 
+            name: "Tres Leches", description: "Pastel tradicional bañado en tres leches." 
+          },
+          { 
+            name: "Flan de la Casa", description: "Cremoso flan casero." 
+          },
+          { 
+            name: "Natillas Caramelizadas", description: "Postre suave con caramelo." 
+          },
         ]
       },
       {
-        name: "Más Antojos",
+        name: "Chocomilk / Esquimos",
         items: [
-          { name: "DoriNachos", description: "Doritos con elote, queso, crema y salsas." },
-          { name: "Café", description: "Americano, Espresso, Latte o Matcha. Frío o caliente." },
+          { name: "Chocomilk Clásico", description: "Batido espumoso de chocolate." },
+          { name: "Chocomilk Antojo", description: "Sabores especiales: Rompope, Baileys, Café o Fresa." },
         ]
       },
       {
-        name: "Bebidas",
+        name: "Pancakes & Waffles",
         items: [
-          { name: "Limonadas Naturales", description: "Sabores de fresa, mango o maracuyá." },
-          { name: "Malteadas", description: "Vainilla, chocolate o fresa." },
-          { name: "Refrescos", description: "Coca-Cola, Sprite, etc." },
+          { name: "Mini Pancakes", description: "Esponjosos y dulces." },
+          { name: "Waffles", description: "Incluye Frutiwaffle Bowl (especial de la casa)." },
+        ]
+      },
+      {
+        name: "Café y Bebidas",
+        items: [
+          { name: "Café Caliente", description: "Americano, Expreso, Latte, Capuchino, Mocha, Cortado, Chocolate." },
+          { name: "Café Frío", description: "Iced Latte, Iced Mocha, Iced Caramel." },
+          { name: "Jugos Naturales", description: "Fruta del día." },
         ]
       }
     ]
   },
+
+  // --- SECCIONES GENERALES ---
+  specialOffer: {
+    title: "Recomendación del Chef",
+    subtitle: "Tienes que probar",
+    itemName: "Fresas VIP (Dubai)",
+    description: "La tendencia viral ahora en tu mesa. Chocolate premium, pistacho crujiente y kataifi. ¡Una experiencia de lujo!",
+    button: "Ver Antojos",
+  },
   
-  favorites: {
-    title: "Elige y Disfruta",
-    subtitle: "Los Favoritos de la Casa",
-    items: [
-      { 
-        name: "Hot Dog Supremo", 
-        description: "Salchicha premium, tocineta, cebolla caramelizada y salsas." 
-      },
-      { 
-        name: "Elote Clásico", 
-        description: "Con mayonesa, queso cotija, chile y limón." 
-      },
-      { 
-        name: "Fresas con Crema", 
-        description: "Nuestra receta especial de crema y leche condensada." 
-      },
-    ]
+  aboutUs: {
+    title: "Snacks Pal Antojo ATX",
+    subtitle: "El sabor que te mereces",
+    content: "Somos tu destino en Austin para cumplir esos antojos, desde una hamburguesa doble carne jugosa hasta unas fresas con crema estilo Dubai. ¡Calidad y sabor en cada bocado!",
+    imageAlt: "Local de Snacks Pal Antojo"
+  },
+  
+  contactForm: {
+    title: "Cotiza Tu Evento",
+    subtitle: "¿Tienes una fiesta? Llevamos los churros, elotes y burgers a tu evento.",
+    labels: {
+      name: "Nombre",
+      email: "Correo",
+      message: "Detalles del evento",
+    },
+    button: "Enviar"
   },
 
   footer: {
     rights: 'Todos los derechos reservados.',
-    followUs: 'Síguenos',
-    findUs: 'Encuéntranos en Austin, TX',
-    location: 'Austin, Texas',
-    contact: 'Contáctanos',
-    created: "Creado por RuedaLaRolaMedia.com"
-  },
-  
-  aboutUs: {
-    title: "Nuestra Pasión, Tu Antojo",
-    subtitle: "Somos una familia dedicada a traer el auténtico sabor.",
-    content: "En Snacks Pal Antojo, creemos que la comida es más que solo un platillo; es un momento. Desde nuestras hamburguesas artesanales hasta las auténticas fresas con crema, cada receta está hecha con ingredientes frescos y mucho cariño. Estamos orgullosos de ser parte de la comunidad de Austin.",
-    imageAlt: "El equipo de Snacks Pal Antojo cocinando"
-  },
-
-  testimonials: {
-    title: "Lo Que Dicen Nuestros Clientes",
-    subtitle: "¡Tu opinión es nuestro ingrediente secreto!",
-    reviews: [
-      {
-        quote: "¡Las mejores fresas con crema que he probado en todo Austin! Sabor auténtico y porciones generosas. 100% recomendado.",
-        name: "Maria G.",
-        source: "Reseña de Google"
-      },
-      {
-        quote: "La Hamburguesa Antojo es de otro nivel. La carne es jugosa, los ingredientes frescos y la salsa especial es increíble. ¡Volveré pronto!",
-        name: "David R.",
-        source: "Recomendación en Facebook"
-      },
-      {
-        quote: "Excelente servicio para mi evento. Pedí varios snacks y todo estuvo delicioso y a tiempo. Muy profesionales.",
-        name: "Ana P.",
-        source: "Cliente de Catering"
-      }
-    ]
-  },
-
-  contactForm: {
-    title: "Cotiza Tu Evento",
-    subtitle: "¿Tienes una fiesta, reunión o evento corporativo? ¡Déjanos encargarnos del sabor! Llena el formulario y te contactaremos.",
-    labels: {
-      name: "Tu Nombre",
-      email: "Tu Correo Electrónico",
-      phone: "Tu Teléfono (Opcional)",
-      message: "Cuéntanos sobre tu evento (Fecha, # personas, etc.)",
-    },
-    button: "Enviar Solicitud",
-    success: "¡Mensaje enviado! Te contactaremos pronto.",
-    error: "Error al enviar. Intenta de nuevo."
-  },
+    created: "Desarrollado por Arknica & Rueda La Rola Media"
+  }
 };

@@ -10,189 +10,202 @@ export const dictionary = {
   hero: {
     fastFood: {
       title: "Fast Food",
-      subtitle: "Burgers, Hot Dogs, and more.",
-      button: "View Fast Food Menu",
-      imgAlt: "Delicious burger"
+      subtitle: "Burgers, Hot Dogs and authentic street flavor.",
+      button: "View Salty Menu",
+      imgAlt: "Double meat burger"
     },
     snacks: {
       title: "Snacks & Desserts",
-      subtitle: "Strawberries, Waffles, and Cravings.",
-      button: "View Snacks Menu",
-      imgAlt: "Strawberries with cream"
+      subtitle: "Strawberries, Churros and Sweet Cravings.",
+      button: "View Sweet Menu",
+      imgAlt: "Large strawberries with cream cup"
     }
   },
 
   menuSwitch: {
     title: "Our Menus",
-    subtitle: "Two options, same amazing flavor.",
+    subtitle: "Two worlds of flavor, one place.",
     card1: {
-      title: "Fast Food",
-      description: "Burgers, Hot Dogs, and Fries.",
+      title: "Salty Menu",
+      description: "Burgers, Hot Dogs, Corn and Dorinachos.",
       imgAlt: "Burger and hot dog",
     },
     card2: {
-      title: "Snacks & Desserts",
-      description: "Strawberries & cream, corn cups, churros, and drinks.",
-      imgAlt: "Strawberries with cream and corn cups",
+      title: "Sweet Menu",
+      description: "Strawberries & cream, Churros, Waffles and Ice Cream.",
+      imgAlt: "Strawberries with cream and churros",
     }
   },
 
-  specialOffer: {
-    title: "Special Offer",
-    subtitle: "Try our",
-    itemName: "Antojo Burger",
-    description: "Double patty, American cheese, crispy bacon, fresh veggies, and our secret house sauce. You can't miss it!",
-    button: "View in Menu",
-  },
-
-  // --- FAST FOOD MENU (No Prices) ---
+  // --- SALTY MENU (Red Image - Burgers/Hot Dogs) ---
   menuFastFood: {
-    title: "Food Menu",
+    title: "Burgers & Salty Cravings",
     categories: [
       {
-        name: "Antojo Burgers",
+        name: "Hamburguesas / Burgers",
         items: [
-          { name: "Classic", description: "House patty, cheese, lettuce, tomato, and special dressing." },
-          { name: "House Special", description: "Double patty, bacon, cheddar cheese, and onion rings." },
+          { 
+            name: "Classic Burger", 
+            description: "Grilled meat, cheese, lettuce, tomato and special dressing." 
+          },
+          { 
+            name: "Antojo Burger", 
+            description: "Double meat, bacon, melted cheese and secret sauce." 
+          },
         ]
       },
       {
         name: "Hot Dogs",
         items: [
-          { name: "Classic American", description: "Sausage, soft bun, pickles, and mustard." },
-          { name: "Antojo Special", description: "Premium sausage with chili, cheese, and jalapeños." },
-          { name: "Supreme Hot Dog", description: "Bacon, caramelized onions, and secret sauces." },
+          { 
+            name: "Antojo Hot Dog", 
+            description: "Bacon-wrapped, mayonnaise, mustard, ketchup, vegetables. (Optional: Grilled onions and chili peppers - Valentina Hot Sauce)." 
+          },
         ]
       },
       {
-        name: "Sides",
+        name: "Sandwich", // En la imagen están en el menú rojo
         items: [
-          { name: "French Fries", description: "Classic cut, crispy and salty." },
-          { name: "Onion Rings", description: "Beer-battered and perfectly fried." },
-          { name: "Cheesy Fries", description: "With melted cheddar cheese and bacon." },
+          { 
+            name: "Chicken Sandwich", 
+            description: "Crispy Chicken with Pepper Jack Cheese, Lettuce, Tomatoes, Pickles & Special Sauce." 
+          },
+        ]
+      },
+      {
+        name: "Elotes / Corn & Dorinachos",
+        items: [
+          { 
+            name: "Corn Cup (Elote en Vaso)", 
+            description: "Corn served in a cup with: Butter, McCormick Mayo, Chili powder, Cotija cheese." 
+          },
+          { 
+            name: "Corn on the Cob (Elote en Mazorca)", 
+            description: "Mexican-style street corn. Toppings: Butter, McCormick Mayo, Chili powder, Cotija cheese." 
+          },
+          { 
+            name: "Dorinachos", 
+            description: "Doritos with cheese, jalapeño & optional corn." 
+          },
+        ]
+      },
+      {
+        name: "Acompañamientos / Sides",
+        items: [
+          { name: "French Fries", description: "Classic crispy fries with sea salt." },
+          { name: "Onion Rings", description: "Golden breaded to perfection." },
+          { name: "Cheese Fries", description: "With melted cheese and special sauce." },
+        ]
+      },
+      {
+        name: "Bebidas / Drinks",
+        items: [
+          { name: "Sodas", description: "Variety of flavors." },
+          { name: "Lemonades", description: "Natural, refreshing and colorful." },
+          { name: "Milkshakes", description: "Strawberry, chocolate or vanilla." },
         ]
       }
     ]
   },
 
-  // --- SNACKS MENU (No Prices) ---
+  // --- SWEET MENU (Pink Image - Strawberries/Churros) ---
   menuSnacks: {
-    title: "Snacks, Desserts & Drinks",
+    title: "Desserts & Sweets",
     categories: [
       {
         name: "Strawberries & Cream",
         items: [
-          { name: "Classic", description: "Fresh strawberries with whipped cream and condensed milk." },
-          { name: "Fresa VIP (Ours)", description: "Strawberries covered in chocolate and special topping." },
-        ]
-      },
-      {
-        name: "Corn Cups (Elotes)",
-        items: [
-          { name: "Classic Corn Cup", description: "With mayo, cotija cheese, chili, and lime." },
-          { name: "Yogurt Ice Cream Bar", description: "Yogurt ice cream base with 3 toppings of your choice." },
+          { 
+            name: "Classic with Cream", 
+            description: "Fresh strawberries with sweet house cream. (Small / Medium / Large)." 
+          },
+          { 
+            name: "VIP Strawberries (Dubai)", 
+            description: "Premium chocolate-dipped strawberries with pistachio, kataifi and Dubai-style finish." 
+          },
         ]
       },
       {
         name: "Churros",
         items: [
-          { name: "Filled Churros", description: "Filled with 'arequipe' (dulce de leche), chocolate, or strawberry." },
-          { name: "Mini Churros", description: "A portion of mini churros to share." },
+          { name: "Classic Churro", description: "Traditional cinnamon and sugar." },
+          { name: "Filled Churro", description: "Fillings: Chocolate, Cajeta (caramel), Strawberry, Lechera (sweet milk), Nutella." },
+          { name: "Mini Churros", description: "A portion of crispy bite-sized churros." },
+          { name: "Mixed Churro Box", description: "With sauces or topping of choice." },
+        ]
+      },
+      {
+        name: "Ice Cream & Desserts",
+        items: [
+          { 
+            name: "Yogurt Ice Cream", 
+            description: "Yogurt ice cream with toppings and flavored sauces." 
+          },
+          { 
+            name: "Tres Leches Cake", description: "Traditional cake soaked in three milks." 
+          },
+          { 
+            name: "House Flan", description: "Creamy homemade flan." 
+          },
+          { 
+            name: "Caramelized Custard", description: "Soft dessert with caramel (Natillas)." 
+          },
+        ]
+      },
+      {
+        name: "Chocomilk / Esquimos",
+        items: [
+          { name: "Classic Chocomilk", description: "Frothy chocolate milk drink." },
+          { name: "Antojo Chocomilk", description: "Special flavors: Rompope (Eggnog), Baileys, Coffee or Strawberry." },
         ]
       },
       {
         name: "Pancakes & Waffles",
         items: [
-          { name: "Mini Pancakes", description: "Fluffy mini pancakes with fruit and honey." },
-          { name: "Waffles", description: "With whipped cream and strawberries." },
+          { name: "Mini Pancakes", description: "Fluffy and sweet." },
+          { name: "Waffles", description: "Includes Frutiwaffle Bowl (house special)." },
         ]
       },
       {
-        name: "More Cravings",
+        name: "Coffee & Drinks",
         items: [
-          { name: "DoriNachos", description: "Doritos with corn, cheese, cream, and sauces." },
-          { name: "Coffee", description: "Americano, Espresso, Latte, or Matcha. Iced or hot." },
-        ]
-      },
-      {
-        name: "Drinks",
-        items: [
-          { name: "Natural Lemonades", description: "Strawberry, mango, or passion fruit flavors." },
-          { name: "Milkshakes", description: "Vanilla, chocolate, or strawberry." },
-          { name: "Sodas", description: "Coca-Cola, Sprite, etc." },
+          { name: "Hot Coffee", description: "Americano, Espresso, Latte, Cappuccino, Mocha, Cortado, Hot Chocolate." },
+          { name: "Iced Coffee", description: "Iced Latte, Iced Mocha, Iced Caramel." },
+          { name: "Fresh Juice", description: "Fruit of the day." },
         ]
       }
     ]
   },
 
-  favorites: {
-    title: "Choose & Enjoy",
-    subtitle: "The House Favorites",
-    items: [
-      { 
-        name: "Supreme Hot Dog", 
-        description: "Premium sausage, bacon, caramelized onions, and sauces." 
-      },
-      { 
-        name: "Classic Corn Cup", 
-        description: "With mayo, cotija cheese, chili, and lime." 
-      },
-      { 
-        name: "Strawberries & Cream", 
-        description: "Our special recipe of cream and condensed milk." 
-      },
-    ]
+  // --- GENERAL SECTIONS ---
+  specialOffer: {
+    title: "Chef's Recommendation",
+    subtitle: "You have to try",
+    itemName: "VIP Strawberries (Dubai)",
+    description: "The viral trend now at your table. Premium chocolate, crunchy pistachio and kataifi. A luxury experience!",
+    button: "View Cravings",
+  },
+  
+  aboutUs: {
+    title: "Snacks Pal Antojo ATX",
+    subtitle: "The flavor you deserve",
+    content: "We are your destination in Austin to satisfy those cravings, from a juicy double meat burger to Dubai-style strawberries and cream. Quality and flavor in every bite!",
+    imageAlt: "Snacks Pal Antojo Location"
+  },
+  
+  contactForm: {
+    title: "Book Your Event",
+    subtitle: "Having a party? We bring the churros, corn, and burgers to your event.",
+    labels: {
+      name: "Name",
+      email: "Email",
+      message: "Event Details",
+    },
+    button: "Send"
   },
 
   footer: {
     rights: 'All rights reserved.',
-    followUs: 'Follow Us',
-    findUs: 'Find us in Austin, TX',
-    location: 'Austin, Texas',
-    contact: 'Contact Us',
-    created: "Created by RuedaLaRolaMedia.com"
-  },
-  
-  aboutUs: {
-    title: "Our Passion, Your Craving",
-    subtitle: "We are a family dedicated to bringing authentic flavor.",
-    content: "At Snacks Pal Antojo, we believe food is more than just a dish; it's a moment. From our craft burgers to authentic strawberries and cream, every recipe is made with fresh ingredients and lots of love. We are proud to be part of the Austin community.",
-    imageAlt: "The Snacks Pal Antojo team cooking"
-  },
-
-  testimonials: {
-    title: "What Our Customers Say",
-    subtitle: "Your opinion is our secret ingredient!",
-    reviews: [
-      {
-        quote: "The best strawberries and cream I've had in all of Austin! Authentic flavor and generous portions. 100% recommended.",
-        name: "Maria G.",
-        source: "Google Review"
-      },
-      {
-        quote: "The 'Antojo Burger' is next level. The meat is juicy, the ingredients are fresh, and the special sauce is incredible. I'll be back soon!",
-        name: "David R.",
-        source: "Facebook Recommendation"
-      },
-      {
-        quote: "Excellent service for my event. I ordered several snacks, and everything was delicious and on time. Very professional.",
-        name: "Ana P.",
-        source: "Catering Client"
-      }
-    ]
-  },
-
-  contactForm: {
-    title: "Quote Your Event",
-    subtitle: "Have a party, meeting, or corporate event? Let us handle the flavor! Fill out the form, and we'll contact you.",
-    labels: {
-      name: "Your Name",
-      email: "Your Email",
-      phone: "Your Phone (Optional)",
-      message: "Tell us about your event (Date, # people, etc.)",
-    },
-    button: "Send Request",
-    success: "Message sent! We will contact you soon.",
-    error: "Error sending. Please try again."
-  },
+    created: "Developed by Arknica & Rueda La Rola Media"
+  }
 };
