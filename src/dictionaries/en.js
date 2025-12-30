@@ -64,7 +64,7 @@ export const dictionary = {
         ]
       },
       {
-        name: "Sandwich", // En la imagen están en el menú rojo
+        name: "Sandwiches", 
         items: [
           { 
             name: "Chicken Sandwich", 
@@ -202,6 +202,49 @@ export const dictionary = {
       message: "Event Details",
     },
     button: "Send"
+  },
+  
+  // --- SECTION RESTORED TO FIX BUILD ERROR ---
+  favorites: {
+    title: "Choose and Enjoy",
+    subtitle: "House Favorites",
+    items: [
+      { 
+        name: "Antojo Burger", 
+        description: "Double meat, bacon and melted cheese." 
+      },
+      { 
+        name: "VIP Strawberries (Dubai)", 
+        description: "The viral trend with chocolate and pistachio." 
+      },
+      { 
+        name: "Chicken Sandwich", 
+        description: "Crispy chicken with Pepper Jack cheese." 
+      },
+    ]
+  },
+
+  // --- SECTION RESTORED TO FIX BUILD ERROR ---
+  testimonials: {
+    title: "What Our Customers Say",
+    subtitle: "Your opinion is our secret ingredient!",
+    reviews: [
+      {
+        quote: "Best strawberries and cream I've had in Austin! Authentic flavor.",
+        name: "Maria G.",
+        source: "Google Review"
+      },
+      {
+        quote: "The Antojo Burger is next level. The special sauce is amazing.",
+        name: "David R.",
+        source: "Facebook"
+      },
+      {
+        quote: "Great service and the churros are always fresh.",
+        name: "Ana P.",
+        source: "Regular Customer"
+      }
+    ]
   },
 
   footer: {

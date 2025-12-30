@@ -64,16 +64,16 @@ export const dictionary = {
         ]
       },
       {
-        name: "Sandwich", // En la imagen están en el menú rojo
+        name: "Sandwiches", 
         items: [
-          {
+          { 
             name: "Chicken Sandwich", 
             description: "Pollo crujiente con queso Pepper Jack, lechuga, tomates, pepinillos y salsa especial." 
           },
         ]
       },
       {
-        name: "Elotes y Dorinachos", // En la imagen están en el menú rojo
+        name: "Elotes y Dorinachos",
         items: [
           { 
             name: "Elote en Vaso (Corn Cup)", 
@@ -89,7 +89,6 @@ export const dictionary = {
           },
         ]
       },
-       
       {
         name: "Acompañamientos / Sides",
         items: [
@@ -203,6 +202,49 @@ export const dictionary = {
       message: "Detalles del evento",
     },
     button: "Enviar"
+  },
+
+  // --- SECCIÓN RESTAURADA PARA ARREGLAR ERROR DE BUILD ---
+  favorites: {
+    title: "Elige y Disfruta",
+    subtitle: "Los Favoritos de la Casa",
+    items: [
+      { 
+        name: "Hamburguesa Antojo", 
+        description: "Doble carne, tocino y queso derretido." 
+      },
+      { 
+        name: "Fresas VIP (Dubai)", 
+        description: "La tendencia viral con chocolate y pistacho." 
+      },
+      { 
+        name: "Chicken Sandwich", 
+        description: "Pollo crujiente con queso Pepper Jack." 
+      },
+    ]
+  },
+
+  // --- SECCIÓN RESTAURADA PARA ARREGLAR ERROR DE BUILD ---
+  testimonials: {
+    title: "Lo Que Dicen Nuestros Clientes",
+    subtitle: "¡Tu opinión es nuestro ingrediente secreto!",
+    reviews: [
+      {
+        quote: "¡Las mejores fresas con crema que he probado en todo Austin! Sabor auténtico.",
+        name: "Maria G.",
+        source: "Reseña de Google"
+      },
+      {
+        quote: "La Hamburguesa Antojo es de otro nivel. La salsa especial es increíble.",
+        name: "David R.",
+        source: "Facebook"
+      },
+      {
+        quote: "Excelente servicio y los churros siempre calientitos.",
+        name: "Ana P.",
+        source: "Cliente Frecuente"
+      }
+    ]
   },
 
   footer: {
