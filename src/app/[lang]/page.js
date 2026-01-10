@@ -18,7 +18,7 @@ import SpecialOffer from '@/components/organisms/SpecialOffer';
 import FavoritesGrid from '@/components/organisms/FavoritesGrid'; 
 import Testimonials from '@/components/organisms/Testimonials'; // <-- NUEVO
 import ContactForm from '@/components/organisms/ContactForm'; // <-- NUEVO
-
+import VisualGallery from '@/components/organisms/VisualGallery'; // <--- Importar
 
 /* --- 3. COMPONENTE DE PÁGINA --- */
 export default async function HomePage({ params: { lang } }) {
@@ -28,7 +28,7 @@ export default async function HomePage({ params: { lang } }) {
     <>
       {/* 1. Hero (con enlaces a menús) */}
       <HeroSection lang={lang} dict={dict.hero} />
-      
+      <VisualGallery />
       {/* 2. Sobre Nosotros (Reemplaza a MenuSwitch) */}
       <AboutUs dict={dict.aboutUs} />
 
