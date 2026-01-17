@@ -43,7 +43,7 @@ const Footer = ({ lang, dict }) => {
             <FaFacebook size={28} />
           </a>
           <a 
-            href="https://www.instagram.com/snackspalantojoatx/" // <-- REVISAR
+            href="https://www.instagram.com/snacks_pal_antojo_" // <-- REVISAR
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="Instagram"
@@ -52,7 +52,7 @@ const Footer = ({ lang, dict }) => {
             <FaInstagram size={28} />
           </a>
           <a 
-            href="http://tiktok.com/@snaks.pal.antojo" 
+            href="https://www.tiktok.com/@snackspalantojo0" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="TikTok"
